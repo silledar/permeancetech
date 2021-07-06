@@ -460,9 +460,12 @@
 
       $('#submit-form').on('click', function(e) {
         e.preventDefault();
-        $.get(url + "?" + $('form#contact-form').serialize(), function(data){
+        $.post(url, $('form#contact-form').serialize()).done(function(data){
           console.log(data);
         });
+        // $.get(url + "?" + $('form#contact-form').serialize(), function(data){
+        //   console.log(data);
+        // });
       })
     });
   </script>
