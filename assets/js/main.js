@@ -256,10 +256,14 @@ $(function(){
 
   $('#submit-form').on('click', function(e) {
     e.preventDefault();
-    $.post(url, $('form#contact-form').serialize()).done(function(data){
-      $('form#contact-form').trigger("reset");
-      $("#success-toast").toast('show');
-    });
+    if($('form#contact-form')[0].checkValidity()) {
+      $.post(url, $('form#contact-form').serialize()).done(function(data){
+        $('form#contact-form').trigger("reset");
+        $("#success-toast").toast('show');
+      });
+    } else {
+      $("form#contact-form")[0].reportValidity();
+    }
   });
 
   const modalData = [

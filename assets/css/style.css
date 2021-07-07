@@ -617,7 +617,7 @@ section {
 }
 
 .features .nav-link h4 {
-  font-size: 16px;
+  font-size: 1vw;
   font-weight: 600;
   margin-left: 1em;
   font-family: sans-serif;
@@ -752,7 +752,7 @@ section {
 
 .services .icon {
   position: absolute;
-  left: -20px;
+  left: 10px;
   top: calc(50% - 30px);
 }
 
@@ -763,7 +763,7 @@ section {
 }
 
 .services .title {
-  margin-left: 40px;
+  margin-left: 60px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
@@ -780,7 +780,7 @@ section {
 
 .services .description {
   font-size: 14px;
-  margin-left: 40px;
+  margin-left: 60px;
   line-height: 24px;
   margin-bottom: 0;
 }
@@ -1592,4 +1592,9 @@ section {
 #modalBody ul {
   list-style: none;
   padding: 0;
+}
+
+.potency-img{
+  width: 43vw;
+  height: 31vw;
 }
