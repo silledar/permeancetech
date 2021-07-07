@@ -1574,3 +1574,22 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+.openModal{
+  cursor: pointer;
+}
+
+#modalBody ul li {
+  padding-bottom: 10px;
+}
+
+#modalBody ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #ef6603;
+}
+
+#modalBody ul {
+  list-style: none;
+  padding: 0;
+}

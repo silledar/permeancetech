@@ -250,3 +250,105 @@
   });
 
 })()
+
+$(function(){
+  const url = 'https://script.google.com/macros/s/AKfycbxJKQEb_s8wQVJlAEg1Hd-dh2bXRxVBI5MlNs6LEqgalcWoiLmGSYHlCHerABiJ4Jev/exec'
+
+  $('#submit-form').on('click', function(e) {
+    e.preventDefault();
+    $.post(url, $('form#contact-form').serialize()).done(function(data){
+      $('form#contact-form').trigger("reset");
+      $("#success-toast").toast('show');
+    });
+  });
+
+  const modalData = [
+    {
+      id: 0,
+      title: "Managed IT Services",
+      data: [
+      "Round-the-clock & relentless technical support",
+      "Proactive system monitoring service",
+      "Patch management service",
+      "Fixed costs",
+      "Remote helpdesk & technical support sessions",
+      "Server/workstation patching",
+      "Backup maintenance service",
+      "Monitoring and alerting of systems",
+      "Email/Spam protection Service.",
+      "Desktop optimization service.",
+      "Application maintenance and deployment.",
+      "Web and antivirus protection service",
+      "Virus monitoring service"
+      ]
+    },
+    {
+      id: 1,
+      title: "Cloud Solutions",
+      data: [
+      "Cloud readiness assessment",
+      "Developing, customizing and migrating applications",
+      "Roadmap for infrastructure management",
+      "Performance optimization",
+      "Security and Risk assessment",
+      "Readiness Assessment",
+      "Cloud-to-cloud movement",
+      "Migration of workloads",
+      "Validation and performance testing",
+      "Disaster Recovery Management Services",
+      "Cloud-based application monitoring",
+      "Building an agile, cloud native platform",
+      "Infrastructure optimization for better performance and cost savings",
+      "Cloud governance and policy"
+
+      ]
+    },
+    {
+      id: 2,
+      title: "End User Computing Solution",
+      data: [
+        "Product Selection",
+        "Full Lifecycle PC Asset Management",
+        "Email and collaboration services",
+        "virtual desktops & applications Management",
+        "Rights-based End User Services",
+        "Deskside and Remote End User Support",
+        "Wireless User Access Networks",
+        "Mobile Device Asset Management",
+        "Identity and Access Management",
+        "Virtual Desktop Infrastructure",
+        "End User Experience Monitoring"
+      ]
+    },
+    {
+      id: 3,
+      title: "Network Solution",
+      data: [
+        "Network strategy and planning",
+        "SD-WAN strategy and assessment",
+        "Unified Communications",
+        "Monitor & Troubleshoot Network Devices",
+       " Upgradation if Network Devices"
+      ]
+    },
+  ]
+
+  const myModal = new bootstrap.Modal($('#myModal'), {
+    keyboard: false
+  })
+
+  $('.openModal').click(function(){
+    const dataIndex = +$(this).data('index');
+    const modalDataObj = modalData.find(x => x.id === dataIndex);
+    $('#myModal').find("#modalTitle").text(modalDataObj.title);
+    $('#myModal').find("#modalBody").empty().append("<ul></ul>");
+    modalDataObj.data.forEach((x, i) => {
+      $('#myModal').find("#modalBody ul")
+      .append('<li><i class="ri-check-double-line"></i>'+ x +'</li>');
+
+      if(i === modalDataObj.data.length - 1) {
+        myModal.toggle();
+      }
+    });
+  });
+});
