@@ -617,7 +617,7 @@ section {
 }
 
 .features .nav-link h4 {
-  font-size: 1vw;
+  font-size: 0.9vw;
   font-weight: 600;
   margin-left: 1em;
   font-family: sans-serif;
@@ -1597,4 +1597,43 @@ section {
 .potency-img{
   width: 43vw;
   height: 31vw;
+}
+
+.mobile-rp ul{
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-rp ul li {
+  padding-bottom: 10px;
+}
+
+.mobile-rp ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #ef6603;
+}
+
+@media only screen and (max-width:768px) {
+  /* mobile view */
+  .desktop-rp{
+    display: none !important;
+  }
+  .mobile-rp{
+    display: block;
+  }
+  .potency-img {
+    width: 85vw;
+    height: 65vw;
+  }
+}
+
+@media only screen and (min-width:768px) { 
+   /* desktop view */
+  .desktop-rp{
+    display: block !important;
+  }
+  .mobile-rp {
+    display: none;
+  }
 }
