@@ -252,7 +252,7 @@
 })()
 
 $(function(){
-  const url = 'https://script.google.com/macros/s/AKfycby2xpdxXNgWb13uwkWLvP7pJE3gsDpcKwXTNLLxPltlfXmIxJiG89CO0uIVnRO0gUmM/exec'
+  const url = 'https://script.google.com/macros/s/AKfycbxlstPapUVQLDbpBFXDckm3baeGn5Gtupip_-s8AijA6gWByEpklfL2LrYhBcj0_Hr7/exec'
 
   $('#submit-form').on('click', function(e) {
     e.preventDefault();
