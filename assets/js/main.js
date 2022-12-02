@@ -349,6 +349,24 @@ $(function(){
        " Upgradation if Network Devices"
       ]
     },
+    {
+      id: 4,
+      title: "Staffing",
+      data: [
+        "IT help desk service",
+        "Software & hardware monitoring",
+        "IT support",
+        "Application support",
+        "Troubleshooting",
+        "Remote suppport",
+        "Outsourcing",
+        "IT administration",
+        "Multi level support",
+        "IT Security",
+        "Development & Testing",
+        "Database Administration"
+      ]
+    },
   ]
 
   const myModal = new bootstrap.Modal($('#myModal'), {
