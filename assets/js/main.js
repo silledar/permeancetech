@@ -367,6 +367,63 @@ $(function(){
         "Database Administration"
       ]
     },
+    {
+      id: 5,
+      title: "Security",
+      data: [
+        " Network Security (IDS, IPS, VPN's, Network Isolation)",
+        "End Point Security -AV, EDR, DM",
+        " App Security -App Firewall, Patch Mgmt",
+        " Data Security - Backup and Recovery",
+        " IAM - Authentication, Authorization, SSO",
+        " Cloud Security - CSPM, SASE, CWPP",
+        " Physical Security - Access Control, Surveillance",
+        " SOC - Monitoring & Auditing",
+      ]
+  
+      
+    },
+    {
+      id: 6,
+      title: "Software Developer",
+      data: [
+        " Web development - Websites, web apps, progressive web apps, shopping sites",
+        " App development - Native & Hybrid business apps",
+        "Software Support - L1, L2 & L3 support for the software",
+        " Legacy Software Development - Software with legacy programming languages like Cobol, R, C etc.",
+        " UI & UX designs - Creative user interfaces with user-friendly user experiences",
+       " Database development - Database management & development ",
+        "Data analytics & Big data - Analysis of big data and pattern extractions, report generations",
+        " Custom Hardware and Software Applications - Combining custom hardware with custom-made software and firmware",
+
+
+
+
+
+
+
+
+      ]
+    },
+   
+{
+  id: 7,
+  title: "training",
+  data: [
+   "Learn from Scratch - We treat you know nothing in IT",
+   " Legacy to Trend - Physical Servers to Cloud Device Management",
+   " Handheld Sessions - We believe every body was spoon fed, till the time they developed so the trainer will sit down with you till the time you get cleared of from tasks",
+   " Transition to Industry - Classroom learning is important but the gap of real-time scenarios does remain, we make sure you are budding a professional to exactly fill his shoes. Mind you this not an OJT but full time absorption and transfer for a stretched period.",
+" Transition to Industry - Classroom learning is important but the gap of real-time scenarios does remain, we make sure you are budding a professional to exactly fill his shoes. Mind you this not an OJT but full time absorption and transfer for a stretched period.",
+
+  ]
+},
+   
+    
+    
+   
+    
+
   ]
 
   const myModal = new bootstrap.Modal($('#myModal'), {
